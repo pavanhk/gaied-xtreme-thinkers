@@ -21,8 +21,8 @@ Need an AI-powered solution to automate classification & data extraction.
 🔗 [Live Demo](#) (if applicable)  
 📹 [Video Demo](#) (if applicable)  
 🖼️ Screenshots:
-artifacts/demo/Image20250326133404.png
-![Screenshot 1](link-to-image)
+![Image20250326133404](https://github.com/user-attachments/assets/773174b7-d4a3-4385-a2c4-06900ad51814)
+![Image20250326133411](https://github.com/user-attachments/assets/8858414a-d4a0-43ee-8cad-b3110d749aab)
 
 ## 💡 Inspiration
 What inspired you to create this project? Describe the problem you're solving.
