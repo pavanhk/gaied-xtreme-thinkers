@@ -68,7 +68,13 @@ In the event of an IMAP authentication error, it is crucial to ensure that our a
 ---
 
 **Template Not Found**  
-When faced with a "Template Not Found" error in our Flask application, it is vital to ensure that our project is correctly configured to locate and serve the necessary HTML templates. To address this issue, we have taken steps to **ensure correct Flask template paths**. This involves
+When faced with a "Template Not Found" error in our Flask application, it is vital to ensure that our project is correctly configured to locate and serve the necessary HTML templates. To address this issue, we have taken steps to **ensure correct Flask template paths**. To address this issue, we have taken several proactive steps to ensure that the Flask template paths are correctly configured and functioning as intended. This includes a comprehensive review of our project structure to verify that all template files are located in their designated directories. We have also implemented a systematic approach to managing the template loading process, ensuring that the Flask application can accurately locate and render the necessary HTML files.
+
+Additionally, we have updated our configuration settings to explicitly define the paths for our template folders, avoiding any ambiguity that could lead to errors. We are employing Flask’s built-in functionalities, such as the `template_folder` parameter, to specify the location of our templates clearly.
+
+Furthermore, we have enhanced our development workflow by integrating testing procedures that validate the accessibility of each template before deployment. This includes writing unit tests that check for the existence of templates and confirm that they render correctly without errors when called from the application.
+
+By implementing these measures, we aim to eliminate any potential issues related to incorrect template paths, thereby improving the stability and reliability of our Flask application. Our commitment to maintaining an organized and well-structured template system will ultimately enhance the overall user experience and streamline the development process.
 
 ## 🏃 How to Run
 1. Clone the repository  
