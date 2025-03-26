@@ -56,7 +56,19 @@ Briefly outline the technologies, frameworks, and tools used in development.
 
 
 ## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+
+**OpenAI API quota exceeded**  
+When we encounter an error indicating that the OpenAI API quota has been exceeded, it is essential to implement an effective strategy to manage our requests and ensure uninterrupted service. To address this issue, we can integrate **retry logic** into our application. This involves setting up a mechanism that will automatically attempt to resend the request after a specified interval when it detects that the quota has been reached. By incorporating exponential backoff algorithms, we can gradually increase the waiting time between retries, which helps to minimize the number of requests sent during peak load times. Additionally, we can explore the option of **switching models**. If we have access to multiple models through the OpenAI API, we can dynamically select a different model that may have a different quota or usage limits, thereby allowing our application to continue functioning while complying with the API restrictions.
+
+---
+
+**IMAP authentication error**  
+In the event of an IMAP authentication error, it is crucial to ensure that our application can securely access the email accounts it needs to manage. To resolve this issue, we have opted to use **App Passwords**. App Passwords are a form of two-factor authentication that generates a unique password specifically for applications that do not support modern authentication protocols. By enabling App Passwords in the email account settings, we can provide a more secure method for our application to authenticate with the IMAP server. This not only enhances security by avoiding the use of the primary account password but also allows us to comply with best practices in user authentication.
+
+---
+
+**Template Not Found**  
+When faced with a "Template Not Found" error in our Flask application, it is vital to ensure that our project is correctly configured to locate and serve the necessary HTML templates. To address this issue, we have taken steps to **ensure correct Flask template paths**. This involves
 
 ## 🏃 How to Run
 1. Clone the repository  
@@ -152,11 +164,21 @@ Folder Structure
 ├── README.md            # Project documentation
 
 ## 🏗️ Tech Stack
-- 🔹 flask
-- 🔹 imapclient
-- 🔹 pdfplumber
-- 🔹 Other: OpenAI API 
-  
+
+
+**Python (Flask for Web UI, IMAP for Email Fetching)**  
+We utilize Python as the primary programming language due to its versatility and robust ecosystem. Within this framework, we leverage Flask, a lightweight web framework, to create an intuitive and responsive web user interface (UI). Flask allows us to easily set up routes, handle user input, and render dynamic HTML content, making it straightforward for users to interact with our application. To facilitate the retrieval of emails, we implement the Internet Message Access Protocol (IMAP). This allows our application to securely connect to email servers, fetch relevant messages, and manage email folders efficiently. With IMAP, we can seamlessly access and process incoming emails, ensuring that users receive timely updates and notifications.
+
+**OpenAI GPT (Email Classification & Data Extraction)**  
+To enhance our application's functionality, we incorporate OpenAI's Generative Pre-trained Transformer (GPT) models. These advanced AI algorithms are designed for natural language processing, making them ideal for classifying incoming emails based on their content and intent. By utilizing GPT, we can automatically categorize emails into predefined classes such as inquiries, complaints, or requests, streamlining the workflow for users. Additionally, GPT aids in data extraction, allowing us to pull relevant information from the body of the email or attachments, such as names, dates, and specific queries. This capability not only improves response accuracy but also reduces the manual effort required to sort and respond to emails.
+
+**PDFplumber (OCR for Extracting Text from Attachments)**  
+To handle attachments, particularly those in PDF format, we employ PDFplumber, a powerful library designed for extracting text from PDF documents. Many emails may contain important attachments that require analysis, and PDFplumber allows us to perform Optical Character Recognition (OCR) on scanned documents. This means we can convert images of text in PDFs into machine-readable text, enabling us to extract valuable information that can be further processed. By integrating PDFplumber into our workflow, we ensure that no critical data is overlooked, regardless of the format in which it is presented.
+
+**JSON-Based Configurable Rules**  
+Our application is designed with flexibility in mind, utilizing JSON (JavaScript Object Notation) as a means to implement configurable rules. This allows users to define and adjust criteria for email classification and data extraction without needing to modify the underlying codebase. By storing rules in a JSON format, users can easily update parameters such as keywords, categories, and extraction guidelines. This configuration method not only enhances usability but also empowers users to customize the application to meet their specific needs and workflows, adapting to changing requirements over time.
+
+**GitHub for Version
 ## 👥 Team
 - **Your Name** - [GitHub](#) | [LinkedIn](#)
 - **Teammate 2** - [GitHub](#) | [LinkedIn](#)
