@@ -52,8 +52,7 @@ Skill-based routing is an intelligent system feature that assigns incoming reque
 The web-based user interface (UI) provides a simple and intuitive frontend that allows users to view and interact with the results of the email processing system. This interface displays the classified requests, extracted data, and any relevant metrics in a clear and organized manner. Users can easily navigate through their emails, view detailed information about each request, and track the status of responses. The UI is designed for ease of use, enabling both technical and non-technical users to efficiently manage their email requests and access insights without needing extensive training or technical knowledge. Additionally, the web-based nature of the UI ensures accessibility from any device with internet connectivity, promoting flexibility and convenience in communication management.
 
 ## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
-
+https://prezi.com/view/4r84XkOssKOz1MqGl56W/
 
 ## 🚧 Challenges We Faced
 
