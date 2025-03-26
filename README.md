@@ -54,6 +54,7 @@ The web-based user interface (UI) provides a simple and intuitive frontend that 
 ## 🛠️ How We Built It
 Briefly outline the technologies, frameworks, and tools used in development.
 
+
 ## 🚧 Challenges We Faced
 Describe the major technical or non-technical challenges your team encountered.
 
@@ -70,13 +71,92 @@ Describe the major technical or non-technical challenges your team encountered.
    ```sh
    npm start  # or python app.py
    ```
+Installation & Setup
+
+Prerequisites
+
+Python 3.8+
+
+OpenAI API Key
+
+IMAP Email Access
+
+Flask for the web UI
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/ewfx/gaied-xtreme-thinkers.git
+cd gaied-xtreme-thinkers
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Configure the config.json file with your OpenAI API key and email credentials:
+
+{
+    "openai_api_key": "your-api-key",
+    "email_host": "imap.example.com",
+    "email_user": "your-email@example.com",
+    "email_pass": "your-password",
+    "openai_model": "gpt-4",
+    "classification_prompt": "Classify the following email: {email_content}",
+    "extraction_prompt": "Extract structured data from this email: {email_content}",
+    "routing_map": { "Loan Adjustment": "Loan Processing Team" }
+}
+
+Running the Application
+
+Option 1: Run with Shell Script (Linux/macOS)
+
+chmod +x run.sh
+./run.sh
+
+Option 2: Run with Batch Script (Windows)
+
+run.bat
+
+Option 3: Manually Start Flask App
+
+python app.py
+
+Once running, access the UI at http://127.0.0.1:5000/.
+
+Running Unit Tests
+
+Navigate to the unit_tests directory:
+
+cd unit_tests
+
+Run all tests:
+
+python -m unittest discover
+
+Folder Structure
+
+├── app.py               # Main application file
+├── config.json          # Configuration file
+├── templates/           # HTML files for web UI
+│   ├── index.html
+├── static/              # Static files (CSS, JS)
+├── unit_tests/          # Unit test scripts
+│   ├── test_email_fetch.py
+│   ├── test_classification.py
+│   ├── test_data_extraction.py
+│   ├── test_routing.py
+├── requirements.txt     # Python dependencies
+├── run.sh               # Shell script to start app
+├── run.bat              # Windows batch script to start app
+├── README.md            # Project documentation
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
-
+- 🔹 flask
+- 🔹 imapclient
+- 🔹 pdfplumber
+- 🔹 Other: OpenAI API 
+  
 ## 👥 Team
 - **Your Name** - [GitHub](#) | [LinkedIn](#)
 - **Teammate 2** - [GitHub](#) | [LinkedIn](#)
