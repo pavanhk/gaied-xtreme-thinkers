@@ -21,7 +21,7 @@ Need an AI-powered solution to automate classification & data extraction.
 🔗 [Live Demo](#) (if applicable)  
 📹 [Video Demo](#) (if applicable)  
 🖼️ Screenshots:
-
+artifacts/demo/Image20250326133404.png
 ![Screenshot 1](link-to-image)
 
 ## 💡 Inspiration
