@@ -25,7 +25,19 @@ Need an AI-powered solution to automate classification & data extraction.
 ![Image20250326133411](https://github.com/user-attachments/assets/8858414a-d4a0-43ee-8cad-b3110d749aab)
 
 ## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+Every day, banks and financial institutions handle an overwhelming volume of emails, each containing critical information for loan processing, compliance, risk assessment, and customer service. Manually sorting, classifying, and extracting key data from these emails is slow, error-prone, and inefficient.
+
+Enter Generative AI (GenAI)—a revolutionary technology that can intelligently classify, extract, and route emails in real time. With advances in natural language processing (NLP) and deep learning, we can build a system that:
+
+✅ Understands context – Unlike traditional rule-based systems, a GenAI-powered model comprehends the nuances of language, ensuring accurate classification.
+
+✅ Extracts key data – Automatically identifies borrower details, loan amounts, contract terms, and action items.
+
+✅ Routes emails intelligently – Directs emails to the right department, whether it’s underwriting, risk, or customer service, reducing delays and human intervention.
+
+✅ Learns and improves – Continuously refines its accuracy through reinforcement learning, adapting to evolving business needs.
+
+By integrating GenAI into commercial lending workflows, banks can speed up decision-making, reduce costs, and enhance customer satisfaction. This is the future of intelligent automation—turning email chaos into structured, actionable insights.
 
 ## ⚙️ What It Does
 Features
